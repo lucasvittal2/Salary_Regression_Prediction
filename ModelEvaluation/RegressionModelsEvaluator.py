@@ -45,23 +45,29 @@ class RegressionModelsEvaluator():
             names.append(name)
 
             #print results
+            mse = abs(cv_results)
+            u_mse = np.mean(mse)
+            rmse = np.sqrt(mse)
+            u_rmse = np.mean(rmse)
+            sigma_rmse = np.std(rmse)
             
-            msg = '%s\t\t\t   MSE %0.2f\t | STD:\t %0.2f\t | RMSE: \t %0.2f\t |' %(name, abs(cv_results.mean()), cv_results.std(), np.sqrt(abs(cv_results.mean())))
+            msg = '%s\t\t\t   MSE %0.2f\t | STD:\t %0.2f\t | RMSE: \t %0.2f\t |' %(name, u_mse, sigma_rmse, u_rmse)
             print(msg)
             
             new_row = {
                 'NAME': name, 
-                'MSE': abs(cv_results.mean()), 
-                'STD': cv_results.std(), 
-                'RMSE': np.sqrt(abs(cv_results.mean()))
+                'MSE': u_mse, 
+                'STD': sigma_rmse, 
+                'RMSE':u_rmse
             }
             report_df = report_df.append(new_row, ignore_index=True)
         
         #sort by the best to the worst model performance
-            
+        
+        report_df['color'] = self.color_palette    
         report_df = report_df.sort_values(ascending=True, by='MSE')
         report_df.set_index('NAME', inplace=True)
-        report_df['color'] = self.color_palette
+        
         
         return names, results, report_df
     
