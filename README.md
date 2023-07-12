@@ -18,6 +18,13 @@ Primeiramente vamos analisar os dados que temos para identificar todos os pré-p
 
 O o notebook assim como suas dependencias podem ser encontrados em:
 
-https://drive.google.com/drive/folders/1mKxH7_GjddefY2MBM7_j6hkiaTuf9N3u?usp=sharing
+
 
 dentro da pastas Code.
+
+Já a pasta do projeto com todos os arquivos e dependências pode ser acessada abaixo:
+
+[Regression Salary Prediction Project Folder](https://drive.google.com/drive/folders/1mKxH7_GjddefY2MBM7_j6hkiaTuf9N3u?usp=sharing)
+
+O notebook encontra-se dentro da pasta Code.
+
