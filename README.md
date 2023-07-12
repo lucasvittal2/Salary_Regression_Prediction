@@ -19,3 +19,5 @@ Primeiramente vamos analisar os dados que temos para identificar todos os pré-p
 O o notebook assim como suas dependencias podem ser encontrados em:
 
 https://drive.google.com/drive/folders/1mKxH7_GjddefY2MBM7_j6hkiaTuf9N3u?usp=sharing
+
+dentro da pastas Code.
