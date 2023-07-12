@@ -14,6 +14,8 @@ Tendo em vista o  esquema do banco de dados diponibilizado pela empresa:
    education level -> Grau de Educação
    salary -> Salário anual em USD$
 ```
-Primeiramente vamos analisar os dados que temos para identificar todos os pré-processamento necessário e possíveis variáveis a serem eliminadas, posteriormente vamos selecionar os modelos que se enquandram nesse tipo de problema, pefromar o cross-validation, optimizar os hiperparâmetros e em seguida fazer novamente o cross validation novamente. Logo após esssa etapa teremos o modelo com melhor performance e  assim faremos nele uma avalição através do Holdout(treino/test). Por fim treinameremos o melhor modelo selecionado como todos os dado disponbilizados para que assim se possa colocar os modelo treinado em produção para ser utilizado pelo gestor da empresa na hora de estimar os perfis que cabem no seu orçamento.}
+Primeiramente vamos analisar os dados que temos para identificar todos os pré-processamento necessário e possíveis variáveis a serem eliminadas, posteriormente vamos selecionar os modelos que se enquandram nesse tipo de problema, pefromar o cross-validation, optimizar os hiperparâmetros e em seguida fazer novamente o cross validation novamente. Logo após esssa etapa teremos o modelo com melhor performance e  assim faremos nele uma avalição através do Holdout(treino/test). Por fim treinameremos o melhor modelo selecionado como todos os dado disponbilizados para que assim se possa colocar os modelo treinado em produção para ser utilizado pelo gestor da empresa na hora de estimar os perfis que cabem no seu orçamento.
 
-Mãos a obra! 🔥🔥🔥
+O o notebook assim como suas dependencias podem ser encontrados em:
+
+https://drive.google.com/drive/folders/1mKxH7_GjddefY2MBM7_j6hkiaTuf9N3u?usp=sharing
